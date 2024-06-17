@@ -35,6 +35,7 @@ use PHPHtmlParser\Dom\Node\Collection;
 use PHPHtmlParser\Dom\Node\HtmlNode;
 use PHPHtmlParser\Dom\Node\InnerNode;
 use PHPHtmlParser\Exceptions\CircularException;
+use PHPHtmlParser\Options;
 
 class Inky
 {
@@ -184,11 +185,10 @@ class Inky
     public function releaseTheKraken($html)
     {
         $dom = new Dom();
-        $dom->setOptions([
-            'removeStyles' => false,
-            'removeScripts' => false,
-        ]);
-        $dom->load((string) $html);
+        $dom->setOptions(
+            (new Options())->setRemoveScripts(false)->setRemoveStyles(false)
+        );
+        $dom->loadStr((string) $html);
 
         $parseCounter = 0;
         while($this->parse($dom)) {
@@ -201,7 +201,7 @@ class Inky
         return $dom->root->outerhtml;
     }
 
-    protected function clearCache(InnerNode $node)
+    protected function clearCache(HtmlNode $node)
     {
         foreach($node->getChildren() as $child) {
             if($child instanceof AbstractNode) {
