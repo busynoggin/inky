@@ -30,10 +30,10 @@ use Hampe\Inky\Component\RowFactory;
 use Hampe\Inky\Component\SpacerFactory;
 use Hampe\Inky\Component\WrapperFactory;
 use PHPHtmlParser\Dom;
-use PHPHtmlParser\Dom\AbstractNode;
-use PHPHtmlParser\Dom\Collection;
-use PHPHtmlParser\Dom\HtmlNode;
-use PHPHtmlParser\Dom\InnerNode;
+use PHPHtmlParser\Dom\Node\AbstractNode;
+use PHPHtmlParser\Dom\Node\Collection;
+use PHPHtmlParser\Dom\Node\HtmlNode;
+use PHPHtmlParser\Dom\Node\InnerNode;
 use PHPHtmlParser\Exceptions\CircularException;
 
 class Inky

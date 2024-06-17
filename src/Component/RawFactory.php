@@ -16,8 +16,8 @@ namespace Hampe\Inky\Component;
 
 
 use Hampe\Inky\Inky;
-use PHPHtmlParser\Dom\HtmlNode;
-use PHPHtmlParser\Dom\TextNode;
+use PHPHtmlParser\Dom\Node\HtmlNode;
+use PHPHtmlParser\Dom\Node\TextNode;
 
 class RawFactory extends AbstractComponentFactory
 {

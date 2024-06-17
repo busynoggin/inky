@@ -16,9 +16,9 @@ namespace Hampe\Inky\Component;
 
 
 use Hampe\Inky\Inky;
-use PHPHtmlParser\Dom\AbstractNode;
-use PHPHtmlParser\Dom\Collection;
-use PHPHtmlParser\Dom\HtmlNode;
+use PHPHtmlParser\Dom\Node\AbstractNode;
+use PHPHtmlParser\Dom\Node\Collection;
+use PHPHtmlParser\Dom\Node\HtmlNode;
 
 interface ComponentFactoryInterface
 {

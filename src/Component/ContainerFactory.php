@@ -15,7 +15,7 @@
 namespace Hampe\Inky\Component;
 
 use Hampe\Inky\Inky;
-use PHPHtmlParser\Dom\HtmlNode;
+use PHPHtmlParser\Dom\Node\HtmlNode;
 
 class ContainerFactory extends AbstractComponentFactory
 {

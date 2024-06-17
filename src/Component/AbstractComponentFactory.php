@@ -15,7 +15,7 @@
 namespace Hampe\Inky\Component;
 
 
-use PHPHtmlParser\Dom\HtmlNode;
+use PHPHtmlParser\Dom\Node\HtmlNode;
 
 abstract class AbstractComponentFactory implements ComponentFactoryInterface
 {
